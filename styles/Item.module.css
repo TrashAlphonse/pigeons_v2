@@ -1,4 +1,6 @@
 .content {
+    grid-column: center-start / center-end;
+    grid-row: 2;
     padding: var(--padding-sm);
     display: grid;
     grid-template-columns: minmax(300px, 670px) 1fr;
