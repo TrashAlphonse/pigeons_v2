@@ -37,7 +37,7 @@ const Bird = ({bird}) => {
 
         <div className={styles.content}>
             <div className={styles.carousel}>
-            <Carousel showThumbs={false} dynamicHeight={true} showStatus={false} centerMode={true} emulateTouch={true} centerSlidePercentage={90} showIndicators={false}>
+            <Carousel showThumbs={false} showStatus={false} emulateTouch={true} showIndicators={false}>
                 <div>
                     <img className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/1.jpg`} height="400px"/>
                 </div>

@@ -20,7 +20,8 @@ export default function Home() {
         <h2>{ bird.name }</h2>
         <Link href={`/${bird.id}`} scroll={false}>
           <div className={styles.cardimg}>
-            <Image src={`/images/${formatName(bird.name)}/logo.jpg`} layout='fill' objectFit='cover' />
+            {/* <Image src={`/images/${formatName(bird.name)}/logo.jpg`} layout='fill' objectFit='cover' /> */}
+            <img className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/logo.jpg`} height="240px" />
           </div>
         </Link>
         </article>
