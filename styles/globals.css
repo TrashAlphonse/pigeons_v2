@@ -1,16 +1,136 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;600&display=swap');
+
+/* RESET AND BASE STYLES */
+
+
+html {
+  --colot-text: #2a335a;
+  --padding-sm: 1.5rem;
+  --padding-lg: 2rem;
+  --margin-sm: 1rem;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: linear-gradient(rgb(255, 145, 252), rgb(255, 255, 255));
+  font-family: 'Mali', cursive;
+  overflow-x: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* CONTAINERS */
+
+.grid-container {
+  padding: 2rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: [container-start] 1fr [center-start] repeat(4, [col-start] minmax(min-content, 300px) [col-end]) [center-end] 1fr [container-end];
+  grid-template-rows: 110px min-content 60px;
+}
+
+.page-animation {
+  grid-column: center-start / center-end;
+  grid-row: 2;
+}
+
+
+/* Navbar */
+
+.site-nav {
+  grid-column: center-start / center-end;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-heading {
+  font-size: 2.5rem;
+  margin-right: var(--margin-sm);
+  background-clip: content-box;
+  backdrop-filter: hue-rotate(45deg);
+}
+
+
+
+/* Pet page */
+
+/* .pet {
+  grid-column: center-start / center-end;
+  grid-row: 2;
+}
+
+.pet-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pet-desc-clay {
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 35px;
+  box-shadow: 35px 35px 68px 0px rgba(184, 141, 244, 0.5), inset -8px -8px 16px 0px rgba(184, 141, 244, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+} */
+
+/* Footer */
+
+.site-footer {
+  grid-column: center-start / center-end;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* 404 PAGE */
+
+.not-found {
+  grid-column: center-start / center-end;
+  grid-row: 2;
+  text-align: center;
+}
+.not-found a{
+  color: #4979ff;
+  text-decoration: underline;
+}
+
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+.carousel .control-next.control-arrow:before {
+  color: #000;
 }
