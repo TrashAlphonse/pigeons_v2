@@ -10,7 +10,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
        </Head>
         <div className={ styles.container }>
-        <h1 className={styles.title}>Interesting Facts</h1>
+        {/* <h1 className={styles.title}>Interesting Facts</h1>
         <section className={ styles.articles }>
 
             <article className={`${styles.article} ${styles.article1}`}>
@@ -34,7 +34,7 @@ const About = () => {
             <p>Pigeons' homing talents continued to shape history during the 20th century. In both World Wars, rival nations had huge flocks of pigeon messengers. (America alone had 200,000 at its disposal in WWII.) By delivering critical updates, the avians saved thousands of human lives. One racing bird named Cher Ami completed a mission that led to the rescue of 194 stranded U.S. soldiers on October 4, 1918.</p>
             </article>
 
-        </section>
+        </section> */}
         </div>
         </>
      );
