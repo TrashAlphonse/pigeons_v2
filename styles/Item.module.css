@@ -4,7 +4,7 @@
     padding: var(--padding-sm);
     display: grid;
     grid-template-columns: minmax(300px, 670px) 1fr;
-    column-gap: var(--padding-sm);
+    grid-gap: var(--padding-sm);
 }
 
 .carousel {
@@ -25,14 +25,20 @@
     grid-column: 2;
 }
 
-.title {
+.title,
+.subtitle {
     backdrop-filter: hue-rotate(185deg);
     margin: 0;
     display: inline-block;
 }
 
-.subtitle {
-    backdrop-filter: hue-rotate(185deg);
-    margin: 0;
-    display: inline-block;
+@media screen and (max-width: 768px) {
+    .carousel {
+        grid-column: 1 / -1;
+    }
+
+    .desc {
+        grid-row: 2;
+        grid-column: 1 / -1;
+    }
 }

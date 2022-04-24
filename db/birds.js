@@ -21,7 +21,7 @@ export const birds = [
     {
         "id": "4",
         "name": "Speckled pigeon",
-        "summary": "",
+        "summary": "This is a large pigeon at 41 cm in length. Its back and wings are rufous, the latter heavily speckled with white spots. The rest of the upperparts and underparts are blue-grey, and the head is grey with red patches around the eye. The neck is brownish, streaked with white, and the legs are red. Sexes are similar, but immatures are browner than adults and lack the red eye patches. The call is a loud doo-doo-doo.",
         "food": "Seeds, from both native and cultivated grasses: maize, wheat and sorghum. In addition to seeds, land molluscs like snails are also eaten.",
         "habitat": "Africa south of the Sahara"
     },

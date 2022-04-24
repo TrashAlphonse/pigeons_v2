@@ -1,10 +1,10 @@
 import { birds } from '../db/birds.js'
-import Image from 'next/image'
+import Head from 'next/head'
 import styles from '../styles/Item.module.css'
-import { useState } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 import { formatName } from '../utils/Format'
+
 
 export const getStaticPaths = async () => {
 
@@ -34,10 +34,14 @@ const Bird = ({bird}) => {
 
     return ( 
         <>
-
+        <Head>
+            <title>{ `Pigeons | ${bird.name}`} </title>
+            <meta name="description" content={ `Info about ${bird.name}`} />
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
         <div className={styles.content}>
             <div className={styles.carousel}>
-            <Carousel showThumbs={false} showStatus={false} emulateTouch={true} showIndicators={false}>
+            <Carousel showThumbs={false} emulateTouch={true} showIndicators={false}>
                 <div>
                     <img className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/1.jpg`} height="400px"/>
                 </div>
