@@ -25,12 +25,18 @@
     grid-column: 2;
 }
 
-.title,
-.subtitle {
-    backdrop-filter: hue-rotate(185deg);
+.title {
+    background-color: var(--color-light-green-md);
     margin: 0;
     display: inline-block;
 }
+
+.subtitle {
+    margin: 0;
+    display: inline-block;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .carousel {
@@ -40,5 +46,9 @@
     .desc {
         grid-row: 2;
         grid-column: 1 / -1;
+    }
+
+    .carousel {
+        padding: 0;
     }
 }

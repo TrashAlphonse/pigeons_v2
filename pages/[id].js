@@ -43,13 +43,13 @@ const Bird = ({bird}) => {
             <div className={styles.carousel}>
             <Carousel showThumbs={false} emulateTouch={true} showIndicators={false}>
                 <div>
-                    <img className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/1.jpg`} height="400px"/>
+                    <img alt={`${bird.name} photo`} className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/1.jpg`} height="400px" />
                 </div>
                 <div>
-                    <img className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/2.jpg`} height="400px" />
+                    <img alt={`${bird.name} photo`} className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/2.jpg`} height="400px" />
                 </div>
                 <div>
-                    <img className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/3.jpg`} height="400px" />
+                    <img alt={`${bird.name} photo`} className={styles.img} decoding="async" loading="lazy" src={`/images/${formatName(bird.name)}/3.jpg`} height="400px" />
                 </div>
             </Carousel>
             </div>
@@ -57,9 +57,9 @@ const Bird = ({bird}) => {
             <div className={styles.desc}>
                 <h1 className={styles.title}>{bird.name}</h1>
                 <p>{bird.summary && bird.summary}</p>
-                {bird.food && <h3 className={styles.subtitle}>What they eat</h3>}
+                {bird.food && <h2 className={styles.subtitle}>What they eat</h2>}
                 <p>{bird.food && bird.food}</p>
-                {bird.habitat && <h3 className={styles.subtitle}>Where to find</h3>}
+                {bird.habitat && <h2 className={styles.subtitle}>Where to find</h2>}
                 <p>{bird.habitat && bird.habitat}</p>
             </div>
         </div>

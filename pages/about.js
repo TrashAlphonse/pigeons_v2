@@ -6,12 +6,13 @@ const About = () => {
         <>
        <Head>
         <title>Pigeons | Interesting Facts</title>
-        <meta name="description" content="Short info about pigeons." />
+        <meta name="description" content="Interesting facts about pigeons." />
         <link rel="icon" href="/favicon.ico" />
        </Head>
         <div className={ styles.container }>
-        <h1 className={styles.title}>Interesting Facts</h1>
         <section className={ styles.articles }>
+
+        <h1 className="sr-only">Interesting facts about pigeons</h1>
 
             <article className={`${styles.article} ${styles.article1}`}>
                 <h2 className={styles.articleTitle}>THEY MIGHT BE <span className={styles.highlight}>THE FIRST DOMESTICATED BIRD</span> .</h2> 

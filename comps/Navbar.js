@@ -14,10 +14,10 @@ const Navbar = () => {
     }
 
     return ( 
-        <nav className='site-nav'>
-            <h1 className='nav-heading'>Pigeonsss</h1>
+        <nav className={styles.nav}>
+            <p className={styles.heading}>Pigeonsss</p>
             <Link href="/"><motion.a className={styles.link} whileHover={hoverEffect}>Home</motion.a></Link>
-            <Link href="/about"><motion.a className={styles.link} whileHover={hoverEffect}>About</motion.a></Link>
+            <Link href="/about"><motion.a className={styles.link} whileHover={hoverEffect}>Curious facts</motion.a></Link>
         </nav>
      );
 }
