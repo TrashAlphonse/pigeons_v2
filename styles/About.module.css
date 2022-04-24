@@ -63,9 +63,6 @@
 
 
 @media screen and (max-width: 768px) {
-  .articles {
-        padding: var(--padding-sm) 0 0 0;
-    }
 
   .article {
       grid-column: 1 / -1;
