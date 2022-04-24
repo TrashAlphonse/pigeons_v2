@@ -15,13 +15,13 @@ const About = () => {
 
             <article className={`${styles.article} ${styles.article1}`}>
                 <h2 className={styles.articleTitle}>THEY MIGHT BE <span className={styles.highlight}>THE FIRST DOMESTICATED BIRD</span> .</h2> 
-                <p>The common city pigeon (Columba livia), also known as the rock pigeon, might be the first bird humankind <a href="https://www.britannica.com/animal/domestic-pigeon" target="_blank" className={styles.link}>ever domesticated</a> . You can see them in art dating back as far as 4500 BCE in modern Iraq, and they've been a valuable source of food for thousands of years.</p> 
+                <p>The common city pigeon (Columba livia), also known as the rock pigeon, might be the first bird humankind ever domesticated. You can see them in art dating back as far as 4500 BCE in modern Iraq, and they've been a valuable source of food for thousands of years.</p> 
             </article>
 
             <article className={`${styles.article} ${styles.article2}`}>
             <h2 className={styles.articleTitle}>THEY CAN FIND THEIR WAY BACK TO THE NEST <span className={styles.highlight}>FROM 1300 MILES AWAY</span> .</h2> 
             <p>The birds can do this even if they've been transported in isolation—with no visual, olfactory, or magnetic clues—while scientists rotate their cages so they don't know what direction they're traveling in. How they do this is a mystery, but people have been exploiting the pigeon's navigational skills since at least 3000 BCE, when ancient peoples would set caged pigeons free and follow them to nearby land. 
-            Their navigational skills also make pigeons great long-distance <a href="https://www.mentalfloss.com/article/54844/history-pigeon" target="_blank" className={styles.link}>messengers</a> . Sports fans in ancient Greece are said to have used trained pigeons to carry the results of the Ancient Olympics. Further east, Genghis Khan stayed in touch with his allies and enemies alike through a pigeon-based postal network.</p>
+            Their navigational skills also make pigeons great long-distance messengers. Sports fans in ancient Greece are said to have used trained pigeons to carry the results of the Ancient Olympics. Further east, Genghis Khan stayed in touch with his allies and enemies alike through a pigeon-based postal network.</p>
             </article>
 
             <article className={`${styles.article} ${styles.article3}`}>
