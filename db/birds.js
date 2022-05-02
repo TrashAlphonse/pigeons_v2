@@ -30,5 +30,23 @@ export const birds = [
         "name": "White-collared pigeon",
         "summary": "A dark pigeon that is endemic to the Abyssinian highlands. There is a white mark on the back of the head, and white patches in the wings that are conspicuous in flight. Found at middle and high elevations. Nests in rocky areas as well as in towns and cities, and feeds mainly in grassland and cultivated areas. Can be similar to the highly variable feral Rock Pigeon, but distinguished by the white mark on the head. Not very vocal, but does sometimes give a low cooing call.",
         "habitat": "Endemic to the Ethiopian highlands in Eritrea and Ethiopia"
+    },
+    {
+        "id": "6",
+        "name": "White-collared pigeon",
+        "summary": "A dark pigeon that is endemic to the Abyssinian highlands. There is a white mark on the back of the head, and white patches in the wings that are conspicuous in flight. Found at middle and high elevations. Nests in rocky areas as well as in towns and cities, and feeds mainly in grassland and cultivated areas. Can be similar to the highly variable feral Rock Pigeon, but distinguished by the white mark on the head. Not very vocal, but does sometimes give a low cooing call.",
+        "habitat": "Endemic to the Ethiopian highlands in Eritrea and Ethiopia"
+    },
+    {
+        "id": "7",
+        "name": "White-collared pigeon",
+        "summary": "A dark pigeon that is endemic to the Abyssinian highlands. There is a white mark on the back of the head, and white patches in the wings that are conspicuous in flight. Found at middle and high elevations. Nests in rocky areas as well as in towns and cities, and feeds mainly in grassland and cultivated areas. Can be similar to the highly variable feral Rock Pigeon, but distinguished by the white mark on the head. Not very vocal, but does sometimes give a low cooing call.",
+        "habitat": "Endemic to the Ethiopian highlands in Eritrea and Ethiopia"
+    },
+    {
+        "id": "8",
+        "name": "White-collared pigeon",
+        "summary": "A dark pigeon that is endemic to the Abyssinian highlands. There is a white mark on the back of the head, and white patches in the wings that are conspicuous in flight. Found at middle and high elevations. Nests in rocky areas as well as in towns and cities, and feeds mainly in grassland and cultivated areas. Can be similar to the highly variable feral Rock Pigeon, but distinguished by the white mark on the head. Not very vocal, but does sometimes give a low cooing call.",
+        "habitat": "Endemic to the Ethiopian highlands in Eritrea and Ethiopia"
     }
 ]

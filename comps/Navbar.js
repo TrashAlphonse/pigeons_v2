@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../styles/Navbar.module.css'
 import { motion } from 'framer-motion'
+
 
 const Navbar = () => {
 
@@ -14,11 +14,13 @@ const Navbar = () => {
     }
 
     return ( 
+        <header className={styles.header}>
         <nav className={styles.nav}>
             <p className={styles.heading}>Pigeonsss</p>
             <Link href="/"><motion.a className={styles.link} whileHover={hoverEffect}>Home</motion.a></Link>
             <Link href="/about"><motion.a className={styles.link} whileHover={hoverEffect}>Curious facts</motion.a></Link>
         </nav>
+        </header>
      );
 }
  

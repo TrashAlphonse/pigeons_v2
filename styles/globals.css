@@ -11,6 +11,9 @@ html {
   --border-radius-sm: 10px;
   --color-light-green: #B3F094;
   --color-light-green-md: rgba(179, 240, 148, .5);
+  --shadow-material-dark: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  --shadow-material: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  --shadow-material-green: 0 3px 6px rgba(179, 240, 148, 0.5), 0 3px 6px rgba(179, 240, 148, 0.5);
 }
 
 
@@ -30,6 +33,17 @@ a {
 
 img {
   max-width: 100%;
+}
+
+button,
+input {
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus-visible {
+  outline: 4px dashed var(--color-light-green-md);
 }
 
 * {
@@ -110,8 +124,8 @@ img {
 
 @media screen and (max-width: 768px) {
   .grid-container {
-    grid-template-rows: 200px min-content 60px;
-    padding: 0;
+    grid-template-rows: 250px min-content 60px;
+    padding: 1rem 0;
   }
 
 }
