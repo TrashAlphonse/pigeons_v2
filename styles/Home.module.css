@@ -37,3 +37,12 @@
   font-size: 1rem;
   box-shadow: var(--shadow-material);
 }
+
+
+
+
+@media screen and (max-width: 768px) { 
+  .cards {
+    grid-row: 3;
+  }
+}

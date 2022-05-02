@@ -124,8 +124,12 @@ input:focus-visible {
 
 @media screen and (max-width: 768px) {
   .grid-container {
-    grid-template-rows: 250px min-content 60px;
+    grid-template-rows: 150px min-content min-content 60px;
     padding: 1rem 0;
+  }
+
+  .site-footer {
+    grid-row: 4;
   }
 
 }

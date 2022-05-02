@@ -10,8 +10,7 @@ export default function Home() {
 
   const [pigeons, setPigeons] = useState(birds)
   const [searchBird, setSearchBird] = useState('')
-
-  const noPigeons = pigeons.length === 0;
+  const [noPigeons, setNoPigeons] = useState(false)
 
 const handleChange = e => {
     const { value } = e.target
@@ -19,12 +18,15 @@ const handleChange = e => {
   }
 
 const handleSubmit = (e) => {
+    setNoPigeons(false)
     e.preventDefault()
     const filteredPigeons = birds.filter(bird => bird.name.toLowerCase().includes(searchBird.toLowerCase()))
     setPigeons(filteredPigeons) 
+    if (filteredPigeons.length === 0) setNoPigeons(true)
 }
 
 const handleClick = () => {
+  setNoPigeons(false)
   setPigeons(birds)
 }
 
@@ -48,7 +50,7 @@ const handleClick = () => {
         </Link>
         </article>
       ))}
-      {/* {noPigeons && <p>Sorry, there're no such pigeons at the moment...</p>} */}
+      {noPigeons && <p>Sorry, there're no such pigeons at the moment...</p>}
     </section>
     </>
   )
