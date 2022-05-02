@@ -11,20 +11,20 @@ export default function Home() {
   const [pigeons, setPigeons] = useState(birds)
   const [searchBird, setSearchBird] = useState('')
 
-  const handleChange = e => {
-    const { value } = e.target
-    setSearchBird(value)
-  }
+// const handleChange = e => {
+//     const { value } = e.target
+//     setSearchBird(value)
+//   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const filteredPigeons = birds.filter(bird => bird.name.toLowerCase().includes(searchBird.toLowerCase()))
-    setPigeons(filteredPigeons) 
-}
+// const handleSubmit = (e) => {
+//     e.preventDefault()
+//     const filteredPigeons = birds.filter(bird => bird.name.toLowerCase().includes(searchBird.toLowerCase()))
+//     setPigeons(filteredPigeons) 
+// }
 
-const handleClick = () => {
-  setPigeons(birds)
-}
+// const handleClick = () => {
+//   setPigeons(birds)
+// }
 
   return (
       <>
@@ -46,7 +46,7 @@ const handleClick = () => {
         </Link>
         </article>
       ))}
-      {pigeons.length === 0 && <p>Sorry, there're no such pigeons at the moment...</p>}
+      {/* {pigeons.length === 0 && <p>Sorry, there're no such pigeons at the moment...</p>} */}
     </section>
     </>
   )
