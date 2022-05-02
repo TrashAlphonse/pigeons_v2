@@ -50,7 +50,7 @@ const handleClick = () => {
         </Link>
         </article>
       ))}
-      {noPigeons && <p>Sorry, there're no such pigeons at the moment...</p>}
+      {/* {noPigeons && <p>Sorry, there're no such pigeons at the moment...</p>} */}
     </section>
     </>
   )
