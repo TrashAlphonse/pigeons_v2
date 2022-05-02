@@ -5,21 +5,11 @@ import Link from 'next/link'
 import { formatName } from '../utils/Format'
 import { useState } from 'react'
 import Search from '../comps/Search'
-// import { useContext } from "react";
-// import AppContext from "../AppContext";
 
 export default function Home() {
 
-  // const value = useContext(AppContext);
-  // const [numberOfItems, setNumberOfItems] = useState(2)
-
   const [pigeons, setPigeons] = useState(birds)
   const [searchBird, setSearchBird] = useState('')
-
-  // const handleClick = () => {
-  //   setNumberOfItems(numberOfItems + 3)
-  //   value.setPigeons(value.state.pigeons.slice(0, numberOfItems))
-  // }
 
   const handleChange = e => {
     const { value } = e.target
@@ -57,7 +47,6 @@ const handleClick = () => {
         </article>
       ))}
       {pigeons.length === 0 && <p>Sorry, there're no such pigeons at the moment...</p>}
-      {/* {numberOfItems !== value.state.pigeons.length && <button className={styles.showmore} onClick={handleClick}>Show more pigeons</button>} */}
     </section>
     </>
   )
