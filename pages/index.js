@@ -22,9 +22,9 @@ const handleSubmit = (e) => {
     setPigeons(filteredPigeons) 
 }
 
-// const handleClick = () => {
-//   setPigeons(birds)
-// }
+const handleClick = () => {
+  setPigeons(birds)
+}
 
   return (
       <>
