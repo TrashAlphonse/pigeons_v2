@@ -16,11 +16,11 @@ const handleChange = e => {
     setSearchBird(value)
   }
 
-// const handleSubmit = (e) => {
-//     e.preventDefault()
-//     const filteredPigeons = birds.filter(bird => bird.name.toLowerCase().includes(searchBird.toLowerCase()))
-//     setPigeons(filteredPigeons) 
-// }
+const handleSubmit = (e) => {
+    e.preventDefault()
+    const filteredPigeons = birds.filter(bird => bird.name.toLowerCase().includes(searchBird.toLowerCase()))
+    setPigeons(filteredPigeons) 
+}
 
 // const handleClick = () => {
 //   setPigeons(birds)
