@@ -46,7 +46,7 @@ const handleClick = () => {
         </Link>
         </article>
       ))}
-      {/* {pigeons.length === 0 && <p>Sorry, there're no such pigeons at the moment...</p>} */}
+      {pigeons.length === 0 && <p>Sorry, there're no such pigeons at the moment...</p>}
     </section>
     </>
   )
