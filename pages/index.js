@@ -11,10 +11,10 @@ export default function Home() {
   const [pigeons, setPigeons] = useState(birds)
   const [searchBird, setSearchBird] = useState('')
 
-// const handleChange = e => {
-//     const { value } = e.target
-//     setSearchBird(value)
-//   }
+const handleChange = e => {
+    const { value } = e.target
+    setSearchBird(value)
+  }
 
 // const handleSubmit = (e) => {
 //     e.preventDefault()
