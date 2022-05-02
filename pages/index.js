@@ -11,6 +11,8 @@ export default function Home() {
   const [pigeons, setPigeons] = useState(birds)
   const [searchBird, setSearchBird] = useState('')
 
+  const displayedPigeons = pigeons.length;
+
 const handleChange = e => {
     const { value } = e.target
     setSearchBird(value)
@@ -46,7 +48,7 @@ const handleClick = () => {
         </Link>
         </article>
       ))}
-      {pigeons.length === 0 && <p>Sorry, there're no such pigeons at the moment...</p>}
+      {displayedPigeons === 0 && <p>Sorry, there're no such pigeons at the moment...</p>}
     </section>
     </>
   )
