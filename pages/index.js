@@ -17,12 +17,11 @@ const handleChange = e => {
     setSearchBird(value)
   }
 
-const handleSubmit = (e) => {
-    setNoPigeons(false)
+const handleSubmit = e => {
     e.preventDefault()
     const filteredPigeons = birds.filter(bird => bird.name.toLowerCase().includes(searchBird.toLowerCase()))
     setPigeons(filteredPigeons) 
-    if (filteredPigeons.length === 0) setNoPigeons(true)
+    filteredPigeons.length === 0 ? setNoPigeons(true) : setNoPigeons(false)
 }
 
 const handleClick = () => {
@@ -40,7 +39,7 @@ const handleClick = () => {
       <Search value={searchBird} onChange={handleChange} onSubmit={handleSubmit} onClick={handleClick} pigeons={pigeons} birds={birds} />
       <section className={styles.cards}>
       <h1 className='sr-only'>Pigeon species</h1>
-      { pigeons.map(bird => (
+      { !noPigeons ? pigeons.map(bird => (
         <article className={styles.card} key={ bird.id }>
         <h2>{ bird.name }</h2>
         <Link href={`/${bird.id}`} scroll={false}>
@@ -49,7 +48,8 @@ const handleClick = () => {
           </div>
         </Link>
         </article>
-      ))}
+      )) : <p>Sorry, there're no such pigeons at the moment...</p> }
+
       {/* {noPigeons && <p>Sorry, there're no such pigeons at the moment...</p>} */}
     </section>
     </>
